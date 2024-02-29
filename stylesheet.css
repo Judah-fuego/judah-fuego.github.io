@@ -6,10 +6,21 @@ nav.nav{
 ul.nav-list{
     display: flex;
     justify-content: center;
+    list-style-type: none;
+    font-size:30px;
+    color: black;
 }
+
+
+
 li.nav-category{
     width: 200px;
     height: 62px;
-    color: black;
+    border-radius: 30px;
+    
 
+
+}
+liv.nav-category:hover{
+    background-color: aliceblue;
 }
