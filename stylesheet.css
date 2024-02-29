@@ -1,14 +1,13 @@
 
 
-nav.nav{
 
-}
 ul.nav-list{
     display: flex;
     justify-content: center;
     list-style-type: none;
     font-size:30px;
     color: black;
+    text-align: center;
 }
 
 
@@ -17,10 +16,20 @@ li.nav-category{
     width: 200px;
     height: 62px;
     border-radius: 30px;
-    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
 
 }
-liv.nav-category:hover{
+li.nav-category:hover{
     background-color: aliceblue;
 }
+
+a.anchorCat{
+    text-decoration: none;
+    color: inherit;
+}
+a.anchorCat:hover {
+    text-decoration: none; /* Remove underline on hover */
+  }
