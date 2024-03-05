@@ -1,6 +1,4 @@
-
-
-
+/* Nav-Bar Css*/
 ul.nav-list{
     display: flex;
     justify-content: center;
@@ -33,3 +31,28 @@ a.anchorCat{
 a.anchorCat:hover {
     text-decoration: none; /* Remove underline on hover */
   }
+
+  /*photoGallerySenior*/
+
+    /*Photo Section*/
+section.photoBlocks{
+    width: 80%;
+    height: fit-content;
+    background-color:antiquewhite;
+
+}
+
+h1.photoBlockHeadersText{
+    color: black;
+    font-style: italic;
+}
+
+h1.photoBlockHeadersText:hover{
+    color: antiquewhite;
+    font-style: italic;
+    background-color: black;
+    border-radius: 15px;
+    padding: 5px;
+
+    
+}
