@@ -38,15 +38,18 @@ a.anchorCat:hover {
 
     /*Photo Section*/
 section.photoBlocks{
-    width: 80%;
+    width: 90%;
     height: fit-content;
     background-color:antiquewhite;
+    margin:auto;
 
 }
 
 h1.photoBlockHeadersText{
     color: black;
     font-style: italic;
+    padding: 15px;
+    margin: 0px;
 }
 
 h1.photoBlockHeadersText:hover{
@@ -64,12 +67,10 @@ ul.photoGallery{
 }
 
 li.individualBlock{
-    width: 15%;
-    height: 400px;
+    height: 200px;
     position:relative;
     padding: 20px;
-    background-color: blue;
-    border-radius: 20%;
+    margin-right: 30px;
 }
 img.individualPhoto{
     display: block; /* remove any inline layout padding/margin */
@@ -79,8 +80,10 @@ img.individualPhoto{
     position: absolute; /* position the image within the list item */
     top: 0; /* position the image at the top of the list item */
     left: 0; /* position the image at the left of the list item */
-    
+    border-radius: 20px;
 }
 p.photoDescription{
     font-style: italic;
+    position: relative; 
+    top: 150px;
 }
