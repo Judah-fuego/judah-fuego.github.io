@@ -48,7 +48,7 @@ section.photoBlocks{
 h1.photoBlockHeadersText{
     color: black;
     font-style: italic;
-    padding: 15px;
+    padding: 20px;
     margin: 0px;
 }
 
@@ -57,16 +57,20 @@ h1.photoBlockHeadersText:hover{
     font-style: italic;
     background-color: black;
     border-radius: 15px;
-    padding: 5px;
+    
 }
 
 ul.photoGallery{
     display:flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     list-style: none;
+  
 }
 
 li.individualBlock{
+    border: 1px solid black;
+    box-shadow: 3px;
     height: 200px;
     position:relative;
     padding: 20px;
