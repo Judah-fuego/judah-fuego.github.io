@@ -1,4 +1,4 @@
-/* Nav-Bar Css*/
+/* Nav-Bar CSS*/
 ul.nav-list{
     display: flex;
     justify-content: center;
@@ -6,6 +6,7 @@ ul.nav-list{
     font-size:30px;
     color: black;
     text-align: center;
+    margin: 0px;
 }
 
 
@@ -17,6 +18,7 @@ li.nav-category{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-right:20px;
 
 
 }
@@ -29,7 +31,7 @@ a.anchorCat{
     color: inherit;
 }
 a.anchorCat:hover {
-    text-decoration: none; /* Remove underline on hover */
+    text-decoration: underline; /* Have underline on hover */
   }
 
   /*photoGallerySenior*/
@@ -53,4 +55,29 @@ h1.photoBlockHeadersText:hover{
     background-color: black;
     border-radius: 15px;
     padding: 5px;
+}
+
+ul.photoGallery{
+    display:flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+li.individualBlock{
+    width: 15%;
+    height: 400px;
+    position:relative;
+}
+img.individualPhoto{
+    display: block; /* remove any inline layout padding/margin */
+    width: 100%; /* scale the image to the width of the list item */
+    height: auto; /* maintain the aspect ratio of the image */
+    object-fit: cover; /* fill the list item while maintaining aspect ratio */
+    position: absolute; /* position the image within the list item */
+    top: 0; /* position the image at the top of the list item */
+    left: 0; /* position the image at the left of the list item */
+    
+}
+p.photoDescription{
+    font-style: italic;
 }
