@@ -45,14 +45,14 @@ section.photoBlocks{
 
 }
 
-.photoBlockHeadersText{
-    color: black;
+p.photoBlockHeadersText{
+    color: rgb(255, 0, 0);
     font-style: italic;
     padding: 20px;
     margin: 0px;
 }
 
-.photoBlockHeadersText:hover{
+p.photoBlockHeadersText:hover{
     color: antiquewhite;
     font-style: italic;
     background-color: black;
@@ -100,7 +100,6 @@ p.photoDescription{
     width: 80%;
     height: 80%;
     z-index: 9999;
-    background-color: rgba(121, 121, 121, 0.9);
     display: flex;
     justify-content: center;
     align-items: center;
