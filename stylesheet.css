@@ -45,14 +45,14 @@ section.photoBlocks{
 
 }
 
-h1.photoBlockHeadersText{
+.photoBlockHeadersText{
     color: black;
     font-style: italic;
     padding: 20px;
     margin: 0px;
 }
 
-h1.photoBlockHeadersText:hover{
+.photoBlockHeadersText:hover{
     color: antiquewhite;
     font-style: italic;
     background-color: black;
@@ -76,7 +76,7 @@ li.individualBlock{
     padding: 20px;
     margin-right: 30px;
 }
-img.individualPhoto{
+img.original{
     display: block; /* remove any inline layout padding/margin */
     width: 100%; /* scale the image to the width of the list item */
     height: auto; /* maintain the aspect ratio of the image */
@@ -93,7 +93,7 @@ p.photoDescription{
 }
 
 /* Photo Popout */
-.popout {
+.new {
     position: fixed;
     top: 0;
     left: 0;
@@ -105,7 +105,7 @@ p.photoDescription{
     justify-content: center;
     align-items: center;
 }
-.popout img {
+.new img {
     max-width: 100%;
     max-height: 100%;
 }

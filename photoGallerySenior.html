@@ -8,17 +8,21 @@
         
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script>
-            $(document).ready(function () {
-    // Custom function to toggle pop-out mode on click
-    $('#photoGallery li').on('click', function () {
-        var $this = $(this);
-        if ($this.hasClass('popout')) {
-            $this.removeClass('popout');
-        } else {
-            $this.addClass('popout');
-        }
-    });
-});
+            function changeClass() {
+                if(element.classList.contains('original'))
+                {
+                    element.classList.remove('original');
+
+                    element.classList.add('new');
+                }
+                else
+                {
+                    element.classList.remove('new');
+
+                    element.classList.add('original');
+                }
+            }
+  
         </script>
     </head>
     <body>
@@ -40,42 +44,19 @@
         <main>
             <section class="photoBlocks">
                 <div class="photoBlockHeaders">
-                    <h1 class="photoBlockHeaderText">Transition Trip</h1>
+                    <p class="photoBlockHeaderText">Transition Trip</p>
                 </div>
                 <div class="photoBlockGallery">
                     <ul class="photoGallery">
                         <li class="individualBlock">
-                            <img class="individualPhoto" src="Photos/campfire.jpg">
+                            <img class="original" src="Photos/campfire.jpg">
                             <p class="photoDescription"> Jumping in the Sun in Fehtiye</p>
                         </li>
                         <li class="individualBlock">
-                            <img class="individualPhoto" src="Photos/campfire.jpg">
+                            <img class="original" src="Photos/campfire.jpg">
                             <p class="photoDescription"> Jumping in the Sun in Fehtiye</p>
                         </li>
-                        <li class="individualBlock">
-                            <img class="individualPhoto" src="Photos/campfire.jpg">
-                            <p class="photoDescription"> Jumping in the Sun in Fehtiye</p>
-                        </li>
-                        <li class="individualBlock">
-                            <img class="individualPhoto" src="Photos/campfire.jpg">
-                            <p class="photoDescription"> Jumping in the Sun in Fehtiye</p>
-                        </li>
-                        <li class="individualBlock">
-                            <img class="individualPhoto" src="Photos/campfire.jpg">
-                            <p class="photoDescription"> Jumping in the Sun in Fehtiye</p>
-                        </li>
-                        <li class="individualBlock">
-                            <img class="individualPhoto" src="Photos/campfire.jpg">
-                            <p class="photoDescription"> Jumping in the Sun in Fehtiye</p>
-                        </li>
-                        <li class="individualBlock">
-                            <img class="individualPhoto" src="Photos/campfire.jpg">
-                            <p class="photoDescription"> Jumping in the Sun in Fehtiye</p>
-                        </li>
-                        <li class="individualBlock">
-                            <img class="individualPhoto" src="Photos/campfire.jpg">
-                            <p class="photoDescription"> Jumping in the Sun in Fehtiye</p>
-                        <!-- </li>? -->
+                        
                     </ul>
 
                 </div>
