@@ -8,7 +8,7 @@
         
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script>
-            function changeClass() {
+            function changeClass(element) {
                 if(element.classList.contains('original'))
                 {
                     element.classList.remove('original');
@@ -49,11 +49,11 @@
                 <div class="photoBlockGallery">
                     <ul class="photoGallery">
                         <li class="individualBlock">
-                            <img class="original" src="Photos/campfire.jpg">
+                            <img class="original" src="Photos/campfire.jpg" onclick="changeClass(this)">
                             <p class="photoDescription"> Jumping in the Sun in Fehtiye</p>
                         </li>
                         <li class="individualBlock">
-                            <img class="original" src="Photos/campfire.jpg">
+                            <img class="original" src="Photos/campfire.jpg" onclick="changeClass(this)">
                             <p class="photoDescription"> Jumping in the Sun in Fehtiye</p>
                         </li>
                         
