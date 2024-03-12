@@ -52,6 +52,7 @@ p.photoBlockHeaderText{
     font-size: 40px;
     padding: 20px;
     margin: 0px;
+    width:fit-content;
 }
 
 p.photoBlockHeaderText:hover{
@@ -106,6 +107,7 @@ p.photoDescription{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(86, 77, 66, 0.31);
 }
 .new img {
     max-width: 100%;
