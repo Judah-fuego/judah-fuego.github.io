@@ -1,4 +1,32 @@
 /* Nav-Bar CSS*/
+#back-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    text-decoration: none;
+    display:  none;
+}
+#back-to-top:hover{
+    background-color: #555;
+}
+
+body{
+    position: relative;
+    overflow-y: scroll;
+}
+
+body:scroll {
+    /* add a class to the body element when the user scrolls */
+    & #back-to-top {
+        display: block;
+    }
+}
+
+
 ul.nav-list{
     display: flex;
     justify-content: center;
@@ -26,6 +54,8 @@ li.nav-category:hover{
     background-color: aliceblue;
 }
 
+/*End of NavBar CSS*/
+
 a.anchorCat{
     text-decoration: none;
     color: inherit;
@@ -52,6 +82,7 @@ p.photoBlockHeaderText{
     font-size: 40px;
     padding: 20px;
     margin: 0px;
+    width:fit-content;
 }
 
 p.photoBlockHeaderText:hover{
@@ -106,6 +137,7 @@ p.photoDescription{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(86, 77, 66, 0.31);
 }
 .new img {
     max-width: 100%;
