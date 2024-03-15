@@ -4,10 +4,10 @@ header {
     position: fixed;
     background-color: white;
     z-index: 9999;
-    
     width: 100%;
     top: 0%;
     padding-top: 15px;
+    box-shadow: rgb(37, 37, 37, 0.48) 10px 10px 10px;
 }
 ul.nav-list {
     display: flex;
@@ -30,7 +30,7 @@ li.nav-category {
 }
 
 li.nav-category:hover {
-    background-color: rgb(228, 228, 228, 0.60);
+    background-color: rgb(228, 228, 228, 0.2);
 }
 
 a.anchorCat {
@@ -177,6 +177,10 @@ ul.listOfNames {
     border-bottom: 2px solid black;
 }
 
+.listOfNames::-webkit-scrollbar {
+    display: none;
+}
+
 
 li.Name {
     padding: 5px;
@@ -202,13 +206,18 @@ li.Name {
 ul.listOfSeniors {
     display: flex;
     justify-content: center;
-    width: fit-content;
     list-style: none;
     margin-top: 50px;
 }
 
 li.Senior{
+    width: 350px;
+    height: 350px;
+    margin-right: 50px;
+    display:flex;
+    flex-direction: column;
 
+    
 }
 
 div.nameOfSenior{
