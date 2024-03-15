@@ -78,7 +78,7 @@ section.photoBlocks {
     background-color: rgb(30, 30, 30, 0.30);
     border-radius: 5%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 p.photoBlockHeaderText {
@@ -203,6 +203,9 @@ li.Name {
 .seniorTitleClass{
     text-align:center;
 }
+
+/* List of Seniors*/
+
 ul.listOfSeniors {
     display: flex;
     justify-content: center;
@@ -215,9 +218,26 @@ li.Senior{
     height: 350px;
     margin-right: 50px;
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
 
     
+}
+
+/*Left side image and Name*/
+div.leftSide{
+    display: flex;
+    flex-direction: column;
+}
+img.seniorPhoto{
+    width: 200px;
+    height: 300px;
+}
+
+/*Right Side questions */
+div.seniorQAndA{
+    display:flex;
+    flex-direction: column;
+
 }
 
 div.nameOfSenior{
