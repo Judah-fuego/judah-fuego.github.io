@@ -1,4 +1,14 @@
 /* Nav-Bar CSS*/
+
+header {
+    position: fixed;
+    background-color: white;
+    z-index: 9999;
+    
+    width: 100%;
+    top: 0%;
+    padding-top: 15px;
+}
 ul.nav-list {
     display: flex;
     justify-content: center;
@@ -30,6 +40,33 @@ a.anchorCat {
 
 a.anchorCat:hover {
     text-decoration: underline; /* Have underline on hover */
+}
+
+hr {
+    width: 90%;
+}
+
+/*Back to the top button
+*/
+
+div.backToTheTopButton {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgb(0 0 0);
+    width: fit-content;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: rgb(82, 82, 82, 0.4) 2px 2px 2px 2px;
+}
+
+.topButton{
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(255 255 255);
+
+
 }
 
 /*photoGallerySenior*/
@@ -110,11 +147,19 @@ p.photoDescription {
     max-height: 100%;
 }
 
-hr {
-    width: 90%;
-}
 
 /* MeetUS CSS*/
+
+#blockSenior{
+    display: flex;
+    margin-top: 100px;
+
+}
+
+/* Title for list of Names*/
+.seniorTitleClass{
+    justify-content:center;
+}
 
 /*List of Names*/
 ul.listOfNames {
@@ -127,12 +172,17 @@ ul.listOfNames {
     overflow: auto;
     margin-left: 50px;
     flex-direction: column;
+    width: fit-content;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
 }
+
 
 li.Name {
     padding: 5px;
     margin-right: 10px;
     margin-top: 8px;
+    width: fit-content;
 }
 .anchorName{
     text-decoration: none;
@@ -141,14 +191,20 @@ li.Name {
 
 /* List of Seniors each with a photo and a description*/
 
-ul.listOfSeniors{
+.sectionMeetUs{
+    width:100%;
+    margin-left:50px;
+}
+
+.seniorTitleClass{
+    text-align:center;
+}
+ul.listOfSeniors {
     display: flex;
     justify-content: center;
-    width: 100%;
-   
+    width: fit-content;
     list-style: none;
     margin-top: 50px;
-    
 }
 
 li.Senior{
