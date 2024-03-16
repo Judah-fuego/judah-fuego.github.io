@@ -197,7 +197,7 @@ li.Name {
 
 .sectionMeetUs{
     width:100%;
-    margin-left:50px;
+    
 }
 
 .seniorTitleClass{
@@ -208,53 +208,68 @@ li.Name {
 
 ul.listOfSeniors {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     list-style: none;
     margin-top: 50px;
 }
 
-li.Senior{
-    width: 47%;
+li.senior{
+   
     height: 350px;
     margin-right: 50px;
     display:flex;
-    flex-direction: row;
-
-    
+    flex-direction: column;
 }
 
-/*Left side image and Name*/
-div.leftSide{
+/*Top side image and Name and Short Bio*/
+
+div.topSide{
+    display: flex;
+    flex-direction: row;
+}
+
+div.leftSeniorPhoto{
+    width: 40%;
+    height: 150px;
+    min-width: 60px;
+
+}
+
+.nameAndBioSenior{
     display: flex;
     flex-direction: column;
-}
-
-img.seniorPhoto{
-    width: 150px;
-    height: 200px;
-}
-
-div.nameOfSenior {
-    text-align: center;
-    transform: rotate(-18deg);
-    margin-top: 60px;
-}
-
-/*Right Side questions */
-div.seniorQAndA{
-    display:flex;
-    flex-direction: column;
+    height: 150px;
 
 }
 
-div.nameOfSenior{
-    writing-mode: vertical-lr;
-    text-orientation: mixed;
-    padding: 10px;
-    font-size: 30px;
-    white-space: nowrap;
-    width: fit-content;
-   
+
+/*Bottom Side questions */
+
+div.seniorQandA{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+div.seniorQuestionAndAnswer{
+    /*border-right: 2px solid black;*/
+    width: 30%;
+    margin-right: 3px;
 }
 
+div.question{
+    padding: 3px 0px 3px 3px;
+    font-size: 14px;
+    font-style: oblique;
+    text-align: left;
+    background-color: rgba(13, 45, 110, 0.70);
+    color: black;
+}
+
+div.answer{
+    font-size: 12px;
+    text-align: left;
+    
+
+}
 
