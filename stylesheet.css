@@ -1,5 +1,16 @@
-/* Nav-Bar CSS*/
+@import url("https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap");
 
+
+/*Section Testing*/
+
+section.wrapSection{
+    display:grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+
+}
+/* Nav-Bar CSS*/
 header {
     position: fixed;
     background-color: white;
@@ -49,7 +60,13 @@ hr {
 /*Back to the top button
 */
 
-div.backToTheTopButton {
+
+
+.topButton {
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(255 255 255);
     position: fixed;
     bottom: 10px;
     right: 10px;
@@ -58,15 +75,7 @@ div.backToTheTopButton {
     padding: 5px;
     border-radius: 10px;
     box-shadow: rgb(82, 82, 82, 0.4) 2px 2px 2px 2px;
-}
-
-.topButton{
-    padding: 10px;
-    font-size: 20px;
-    text-decoration: none;
-    color: rgb(255 255 255);
-
-
+    cursor: pointer;
 }
 
 /*photoGallerySenior*/
@@ -236,19 +245,17 @@ div.leftSeniorPhoto{
     height: 150px;
     min-width: 60px;
     padding: 3px;
-
+     
 
 }
 
-img.seniorPhoto{
-    
-}
+
 
 .nameAndBioSenior{
     display: flex;
     flex-direction: column;
     height: 150px;
-
+    overflow: scroll;
 }
 
 div.nameOfSenior{
@@ -265,6 +272,8 @@ div.seniorQAndA{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    overflow: scroll;
+    
 
 }
 div.seniorQuestionAndAnswer{
@@ -287,4 +296,9 @@ div.answer{
     text-align: left;
 
 }
+
+/*
+    index.html
+*/
+
 
