@@ -210,15 +210,18 @@ ul.listOfSeniors {
     display: flex;
     justify-content: space-around;
     list-style: none;
-    margin-top: 50px;
+    flex-wrap: wrap;
+    
 }
 
-li.senior{
-   
-    height: 350px;
+li.senior {
+    height: 300px;
     margin-right: 50px;
-    display:flex;
+    display: flex;
     flex-direction: column;
+    width: 40%;
+    box-shadow: gray 6px 10px 13px;
+    margin-top: 30px;
 }
 
 /*Top side image and Name and Short Bio*/
@@ -229,10 +232,16 @@ div.topSide{
 }
 
 div.leftSeniorPhoto{
-    width: 40%;
+    width: 60%;
     height: 150px;
     min-width: 60px;
+    padding: 3px;
 
+
+}
+
+img.seniorPhoto{
+    
 }
 
 .nameAndBioSenior{
@@ -242,19 +251,26 @@ div.leftSeniorPhoto{
 
 }
 
+div.nameOfSenior{
+    text-align: center;
+    font-size: 20px;
+    padding: 2px 0px 2px 0px;
+    text-decoration: underline;
+}
+
 
 /*Bottom Side questions */
 
-div.seniorQandA{
+div.seniorQAndA{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-around;
 
 }
 div.seniorQuestionAndAnswer{
     /*border-right: 2px solid black;*/
     width: 30%;
-    margin-right: 3px;
+    
 }
 
 div.question{
@@ -269,7 +285,6 @@ div.question{
 div.answer{
     font-size: 12px;
     text-align: left;
-    
 
 }
 
